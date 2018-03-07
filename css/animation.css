@@ -1,0 +1,122 @@
+.contenedor_03:hover .objeto:nth-of-type(1)[data-rating="1"] {
+    border-radius: 0% 0% 50% 0%;
+    transition: 2s;
+}
+.contenedor_03:hover .objeto:nth-of-type(2)[data-rating="2"] {
+    border-radius: 0% 0% 0% 50%;
+    transition: 2s;
+}
+.contenedor_03:hover .objeto:nth-of-type(3)[data-rating="3"] {
+    border-radius: 0% 50% 0% 0%;
+    transition: 2s;
+}
+.contenedor_03:hover .objeto:nth-of-type(4)[data-rating="4"] {
+    border-radius: 50% 0% 0% 0%;
+    transition: 2s;
+}
+
+@keyframes correr {
+    0% {
+        transform: translateX(200%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes chocar {
+    0% {
+        transform: translateX(-200%);
+    }
+    40%{
+        transform: translateX(110%);
+    }
+    80%{
+        transform: translateX(-60%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes html5 {
+    from {
+        transform: rotate(360deg) scale(1);
+    }
+    to{
+        transform:rotate(0deg) scale(0.8);
+        color: var(--html5);
+    }
+}
+@keyframes css3 {
+    0% {
+        transform: rotate(-360deg) scale(1);
+    }
+    100%{
+        transform:rotate(0deg) scale(1.2);
+        color: var(--css3);
+    }
+}
+@keyframes js {
+    0% {
+        transform: rotate(-360deg) scale(1);
+    }
+    100%{
+        transform:rotate(0deg) scale(1.2);
+        color: var(--javascript);
+    }
+}
+@keyframes sass {
+    0% {
+        transform: rotate(360deg) scale(1);
+    }
+    100%{
+        transform:rotate(0deg) scale(0.8);
+        color: var(--sass);
+    }
+}
+.cabecera:nth-of-type(1) h1 {
+    animation: 2s ease-out correr;
+}
+.cabecera:nth-of-type(2) h1 {
+    animation: 1.5s ease-out correr;
+}
+.cabecera:nth-of-type(3) h2 {
+    animation: 2s ease-out correr;
+}
+.cabecera:nth-of-type(4) img {
+    animation: 2s ease-out chocar;
+}
+
+.fa-linkedin:hover {
+    color: var(--linkedin);
+}
+.fa-facebook-square:hover {
+    color: var(--facebook);
+}
+.fa-twitter-square:hover {
+    color: var(--twitter);
+}
+.fa-github-square:hover {
+    color: var(--github);
+}
+.fa-html5:hover {
+    animation: html5 1s 2 ease-in-out;
+    animation-direction: alternate;
+}
+.fa-css3-alt:hover {
+    animation: css3 1s 2 ease-in-out;
+    animation-direction: alternate;
+}
+.fa-js:hover {
+    animation: js 1s 2 ease-in-out;
+    animation-direction: alternate;
+}
+.fa-sass:hover {
+    animation: sass 1s 2 ease-in-out;
+    animation-direction: alternate;
+}
